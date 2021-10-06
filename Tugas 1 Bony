@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Tugas {
+    public static void main(String[] abcd) {
+
+        StackGeneric<String> stack = new StackGeneric<>(25);
+        String input = "f(x)=(2x+y)-(3+(2x-x)+20)";
+        Scanner good = new Scanner(input);
+
+        trii.useDelimiter("");
+
+        for (int t = 0; t < 25; t++) {
+            String Good = good.next();
+            if (Good.equals("(")) {
+                stack.push("(");
+            } else if (Good.equals(")")){
+                stack.pop();
+            }
+        }
+
+        if (stack.isEmpty()) {
+            System.out.println("valid");
+        } else {
+            System.out.println("tidak valid");
+        }
+    
+    }
